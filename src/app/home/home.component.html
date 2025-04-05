@@ -1,0 +1,26 @@
+<mat-toolbar color=pink>
+  <span >Mascotas Disponibles Para Adopción</span>
+</mat-toolbar>
+<div class="container">
+    <div class="row">
+      
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let dog of dogs">
+        <div class="dog-card">
+          <img [src]="dog.image" alt="{{ dog.name }}" class="dog-image" />
+          <h2 class="dog-name">{{ dog.name }}</h2>
+          <p class="dog-description">{{ dog.description }}</p>
+          <div class="dog-actions">
+
+            <button class="like-button" (click)="onLike(dog.name)">
+              <span class="material-icons">favorite</span> LIKE
+            </button>
+  
+            <button class="share-button" (click)="onShare(dog.name)">
+            <span class="material-icons">share</span> SHARE
+          </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

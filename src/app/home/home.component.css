@@ -1,0 +1,88 @@
+.container {
+    margin: 35px ; 
+    max-width: 100%; 
+  }
+  
+  .row {
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .col-md-4 {
+    padding: 15px; 
+  }
+  
+  .dog-card {
+    width: 400px; 
+    height: auto;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 15px; 
+    text-align: center; 
+    background-color: #fff; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  
+  
+  .dog-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px;
+    object-fit: contain; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+  }
+  
+  
+  .dog-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .dog-description {
+    font-size: 14px;
+    color: #555; 
+    line-height: 1.5;
+    overflow: visible;
+    white-space: normal;
+  }
+  
+  .dog-actions {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    cursor: pointer; 
+  }
+  
+  .like-button {
+    background-color: #ff5252;
+    color: white;
+  }
+  
+  .share-button {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .mat-toolbar {
+    background-color: #ff97f3; 
+    color: white; 
+    font-size: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    padding: 10px; 
+}
